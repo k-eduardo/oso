@@ -192,7 +192,16 @@ body {
     }
     
     .hero-image {
-        height: 350px;
+        height: auto;
+        min-height: 250px;
+        object-fit: contain;
+        object-position: center;
+    }
+    
+    .hero-overlay {
+        position: relative;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 20px 15px;
     }
     
     .hero-overlay h2 {
@@ -247,15 +256,29 @@ body {
     }
     
     .hero-image {
-        height: 300px;
+        height: auto;
+        min-height: 200px;
+        object-fit: contain;
+        object-position: center;
     }
     
     .hero-overlay {
-        padding: 20px 15px 15px;
+        position: relative;
+        background: rgba(0, 0, 0, 0.9);
+        padding: 15px 10px;
     }
     
     .hero-overlay h2 {
         font-size: 1.5rem;
+    }
+    
+    .hero-overlay p {
+        font-size: 0.9rem;
+    }
+    
+    .obligatorio {
+        padding: 6px 15px;
+        font-size: 0.8rem;
     }
     
     .gallery {
